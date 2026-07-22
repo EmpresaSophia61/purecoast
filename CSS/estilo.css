@@ -1,0 +1,70 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+.linha-azul{
+   background-color: rgba(0, 42, 126, 1);
+   height: 6px;
+    border: none;
+}
+.linha-branco{
+    background-color: white;
+    height: 5px;
+     border: none;
+}
+.linha-vermelho{
+    background-color: rgba(205, 16, 38, 1);
+    height:9px;
+    border: none;
+}
+header{
+    padding: 5px;
+}
+header h1{
+    font-family:"Dela Gothic One", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+}
+.hero img{
+    height: 1000px;
+    width: 800px;
+    object-fit: cover;
+    display:block
+    
+}
+#img-hero{
+    margin:0;
+    display: flex;
+}
+
+.card-intro{
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+    
+}
+#introducao-card-superior{
+     grid-area: superior; 
+}
+
+#introducao-card-direito{
+    color:rgb(173, 0, 0);
+    grid-area: direito;
+}
+#introducao-card-esquerdo{
+    color:rgb(17, 0, 125);
+    grid-area: esquerdo;
+}
+#introducao-home{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "superior superior"
+        "esquerdo direito";
+    gap:20px;
+    width:80%;
+    margin:auto;
+}
