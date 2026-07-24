@@ -1,0 +1,131 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+.linha-azul{
+   background-color: rgba(0, 42, 126, 1);
+   height: 7px;
+   border: none;
+}
+.linha-branco{
+    background-color: white;
+    height: 6px;
+     border: none;
+}
+.linha-vermelho{
+    background-color: rgba(205, 16, 38, 1);
+    height:12px;
+    border: none;
+}
+header{
+    padding: 10px;
+    min-height: 70px;
+}
+header h1{
+    font-family:"Denk One", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    font-weight: lighter;
+}
+#card-introducao{
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+    align-items: center;
+    display: flex;
+    max-width: 90%;
+}
+#card-introducao{
+    font-size: 2rem;
+    font-family: "Syne";
+    font-weight: bold;
+}
+.topo{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+
+
+.conteudo{
+    padding:40px;
+}
+
+.lista{
+    display: flex;
+    gap:2rem;
+    margin-top: 40px;
+}
+.item{
+    object-fit: cover;
+    position:relative;
+    overflow:hidden;
+    transition:1s;
+    justify-content: center;
+    display: flex;
+    border-radius: 70px;
+}
+.item img{
+    width: 600px;
+    height: 800px;
+    object-fit: cover;
+    
+}
+.texto{
+    position: absolute;
+    top:100%;
+    transform: translate (-50%, -50%);
+    transition: 1s;
+    opacity: 0;
+    color: white;
+}
+.item h3{
+    color:white;
+    font-family: "Syne";
+    font-weight: 500;
+    position: absolute;
+    top:100%;
+    font-size: 2.3rem;
+}
+.item:hover h3{
+    opacity: 1;
+    top: 2%;
+}
+.item:hover{
+    transform:scale(1.05);
+}
+.item:hover img{
+  filter: blur(5px) brightness(40%);
+}
+.item:hover .texto{
+    opacity: 1;
+    top: 13%;
+}
+.texto h4{
+    font-family:"Syne";
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+.resposta {
+    font-family: "Manrope";
+    font-size: 1.4rem;
+}
+.texto{
+    padding:20px;
+}
+
+.conteudo h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Syne";
+    margin-top: 30px;
+}
+.carreira{
+    margin-top: 70px;
+}
+
+

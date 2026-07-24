@@ -68,3 +68,35 @@ header h1{
     width:80%;
     margin:auto;
 }
+
+
+
+
+
+.lista{
+    display: flex;
+    gap:1rem;
+}
+.item{
+    width: 250px;
+    height: 450px;
+    object-fit: cover;
+    position:relative;
+    overflow:hidden;
+    transition:1s;
+}
+p{
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform: translate (-50%, -50%);
+    transition: 1s;
+    opacity: 0;
+}
+.item:hover{
+    transform:scale(1.05);
+}
+.item:hover p{
+    opacity: 1;
+    top: 50%;
+}
