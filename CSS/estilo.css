@@ -212,7 +212,7 @@ a{
     grid-row: 4;
 }
 #categorias hr{
-    height: 4px;
+    height: 6px;
     margin: 90px;
     border: none;
     background-color: rgb(196, 196, 196);
@@ -225,18 +225,22 @@ a{
     padding: 60px;
     column-gap: 90px;
     row-gap: 30px;
+    margin-top: 8%;
 }
 .card-paginas{
     background-color:white ;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,.2);
     padding: 10px;
-    height: 90px;
+    height: 140px;
     text-align: center;
     font-size: 2.5rem;
     font-family: "Manrope";
     font-weight:lighter;
     transition: transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     
 }
 .card-paginas:hover{
@@ -247,7 +251,7 @@ a{
     gap: 50px;
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 .banner{
     position: relative;
@@ -304,7 +308,111 @@ a{
 .banner-botao:hover {
     transform: scale(1.08);
 }
+#invitacao-quiz{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    margin: auto;
+    padding: 200px 30px 90px;
+}
+#invitacao-quiz h2{
+    font-family: "Syne";
+    font-size: 3rem;
+     justify-content: center;
+    margin: auto;
+}
+#invitacao-quiz button{
+    font-family: "Pixelify Sans";
+    font-size: 5rem;
+    background-color: white;
+    border: 7px solid black;
+    border-radius: 80px;
+    margin: auto;
+    padding: 20px 100px;
+    display: flex;
+   justify-content:center;
+    align-items: flex-end;
+    box-shadow: 9px 15px 1px -5px rgba(0, 0, 0, 0.18);
+}
+#Z{
+ font-family: "Silkscreen";
+ font-weight: lighter;
+ font-size: 5.1rem;
+ 
+}
 
+
+footer{
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(119, 119, 119);
+    margin-top: 70px;
+    padding: 30px 30px 10px;
+    
+  
+    
+}
+#footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 40px;
+    font-size: 1.5rem;
+    gap:30px;
+
+}
+#footer-esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:8px 
+}
+footer hr{
+    background-color: rgb(70, 68, 68);
+    border: none;
+    height: 5px;
+
+}
+#contatos{
+    gap:17px;
+    display: flex;
+    justify-content:space-between;
+}
+#contatos img{
+    height:50px;
+    width: auto;
+    filter: brightness(40%);
+}
+#logo{
+    height: 100px;
+}
+#footer-direita{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    font-family: "Inter";
+}
+#copyright{
+display: flex;
+justify-content:center;
+align-items: flex-end;
+
+}
+#copyright p{
+    font-family: "Inter";
+}
+#copyright #pure{
+    font-family: "Michroma";
+    font-weight: lighter;
+    font-size: 23px;
+}
+#copyright #coast{
+    font-family: "Syne";
+    font-size: 26px;
+}
 
 
 
