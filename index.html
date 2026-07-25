@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Costa Rica</title>
 </head>
 <body>
     <header>
-        <h1>COSTA RICA</h1>
-         
-
+        <h1>COSTA<br>RICA</h1>
+        <nav>
+             <ul>
+                <li><a href="#home">DESCUBRA</a></li>
+                <li><a href="#sobre">QUIZ</a></li>
+                <li><a href="#servicos">DESENVOLVEDORES</a></li>
+            </ul>
+        </nav>
     </header>
 
 <main>
@@ -32,8 +39,8 @@
     </article>
 
     <article id="introducao-home">
-        <div>
-            <p id="introducao-card-superior" class="card-intro">Seja muito bem-vindo ao Pure Coast! Prepare-se para 
+        <div class="card-intro" id="card-preto">
+            <p id="preto" >Seja muito bem-vindo ao Pure Coast! Prepare-se para 
             conhecer um país onde vulcões, florestas tropicais, 
             praias paradisíacas e uma cultura vibrante se encontram
             em perfeita harmonia. Ao longo desta jornada, você vai 
@@ -41,7 +48,8 @@
             que fazem da Costa Rica um dos destinos mais fascinantes do mundo. 
             Então respire fundo... e viva o verdadeiro espírito Pura Vida!</p>
         </div>
-            <p id="introducao-card-esquerdo" class="card-intro">
+        <div class="card-intro" id="card-vermelho" >
+            <p id="vermelho" >
             Explore cada canto da Costa Rica através de páginas 
             dedicadas à sua história, cultura, natureza, gastronomia,
             música e muito mais. Navegue por galerias de imagens, 
@@ -49,38 +57,120 @@
             teste seus conhecimentos em um quiz interativo.
             Cada seção foi criada para proporcionar uma experiência envolvente
             e cheia de descobertas.</p>
-            <p id="introducao-card-direito" class="card-intro">Não tenha pressa. Explore cada página, admire cada 
+        </div>
+        <div class="card-intro" id="card-azul">
+            <p id="azul" >Não tenha pressa. Explore cada página, admire cada 
             detalhe e mergulhe em um país onde a natureza impressiona, 
             a cultura encanta e a expressão Pura Vida faz parte do cotidiano.
             Esperamos que, ao final da visita, você conheça um pouco 
             mais da Costa Rica e leve consigo a vontade de um dia vivenciar tudo
             isso de perto.</p>
+        </div>
     </article>
+</section>
+<section class="noticias">
+    <article id="destaques">
+        <h2>Destaques do dia</h2>
+        <div id="cards">
+            <div class="card cafe">
+                <img src="./assets/img/homecafe.jpg" alt="">
+                <div class="texto">
+                    <h3>Aí vai uma xícara de café?</h3>
+                    <p>O café do país é reconhecido mundialmente pela qualidade.</p>
+                </div>
+            </div>
+            <div class="card gallo">
+                <img src="./assets/img/homegallopinto.jpg" alt="">
+                <div class="texto">
+                   <h3>Que cheirinho bom!</h3>
+                   <p>O carro-chefe da Costa Rica.</p>
+                </div>
+            </div>
 
+            <div class="card puravida">
+                <img src="./assets/img/homepuravida.jpg" alt="">
+                <div class="texto">
+                    <h3>Pura Vida!</h3>
+                    <p>A expressão mais famosa da Costa Rica.</p>
+                </div>
+           </div>
 
+            <div class="card tucano">
+                <img src="./assets/img/hometucano.jpg" alt="">
+                <div class="texto">
+                    <h3>O Glamour da floresta!</h3>
+                    <p>Com seu enorme bico colorido, o tucano é uma das aves mais famosas 
+                    da Costa Rica e um dos símbolos de sua biodiversidade.</p>
+                    </p>
+                </div>
+            </div>
 
+            <div class="card arenal">
+                <img src="./assets/img/homearenal.jpg" alt="">
+                <div class="texto">
+                    <h3>Shhhh, para não acordá-lo!</h3>
+                    <p>O Vulcão Arenal é um dos cartões-postais 
+                    mais famosos da Costa Rica.</p>
+                </div>
+            </div>
 
-    <div class="lista">
-        <div class="item">
-            <img src="./assets/img/imghome2.png">
-            <p class="texto">Não tenha pressa. Explore cada página, admire cada 
-            detalhe e mergulhe em um país onde a natureza impressiona, 
-            a cultura encanta e a expressão Pura Vida faz parte do cotidiano.
-            Esperamos que, ao final da visita, você conheça um pouco 
-            mais da Costa Rica e leve consigo a vontade de um dia vivenciar tudo
-            isso de perto.</p>
+            <div class="card boruca">
+                <img src="./assets/img/homeboruca.jpg" alt="">
+                <div class="texto">
+                    <h3>Esculpidas com tradição!</h3>
+                    <p>Produzidas artesanalmente, as máscaras 
+                    Boruca preservam séculos de cultura indígena.</p>
+                </div>
+            </div>
+
+            <div class="card diquis">
+                <img src="./assets/img/homediquis.jpg" alt="">
+                <div class="texto">
+                    <h3>Alienígenas? Calma...</h3>
+                    <p>As misteriosas Esferas de Diquís intrigam 
+                    arqueólogos do mundo inteiro.</p>
+                </div>
+            </div>
         </div>
-         <div class="item">
-            <img src="./assets/img/imghome2.png">
-            <p class="texto">Não tenha pressa. Explore cada página, admire cada 
-            detalhe e mergulhe em um país onde a natureza impressiona, 
-            a cultura encanta e a expressão Pura Vida faz parte do cotidiano.
-            Esperamos que, ao final da visita, você conheça um pouco 
-            mais da Costa Rica e leve consigo a vontade de um dia vivenciar tudo
-            isso de perto.</p>
+    </article>
+</section>
+<section id="categorias">
+    <hr>
+    <article id="retangulos">
+        <div class="card-paginas">
+            <h3>História</h3>
         </div>
-    </div>
+        <div class="card-paginas">
+            <h3>Natureza</h3>
+        </div>
+        <div class="card-paginas">
+            <h3>Cultura</h3>
+        </div>
+        <div class="card-paginas">
+            <h3>Gastronomia</h3>
+        </div>
+    </article>
+    <article id="banners">
+        <div class="banner"> 
+            <img src="./assets/img/bannermusica.jpg">
+            <div class="banner-texto">
+                <h2>¡Los Ticos te llaman a bailar!</h2>
+                <h4>Os Ticos te chamam para dançar!</h4>
+                <h3>Descubra as vozes, ritmos e histórias que fazem a Costa Rica cantar.</h3>
+                <button class="banner-botao"> Entre no ritmo -></button>
+            </div>
+        </div>
 
+         <div class="banner">
+            <img src="./assets/img/bannergalleria.jpg">
+            <div class="banner-texto">
+                <h2>Costa Rica sin filtro</h2>
+                <h4>Costa Rica sem filtro</h4>
+                <h3>Que tal uma Costa Rica em sua forma mais Pura Vida?</h3>
+                 <button class="banner-botao">Explorar galeria -></button>
+            </div>
+        </div>
+    </article>
 </section>
 
  
