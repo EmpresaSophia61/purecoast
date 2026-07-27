@@ -1,3 +1,5 @@
+@import "./fonts.css";
+
 *{
     margin:0%;
     padding:0%;
@@ -404,10 +406,11 @@ footer{
     width: 100%;
     color: rgb(119, 119, 119);
     margin-top: 70px;
-    padding: 30px 30px 10px;
-    
-  
-    
+    padding: 30px 30px 10px;  
+}
+footer.dark {
+    background-color: rgb(252, 252, 252);
+    color: rgb(42, 42, 42);
 }
 #footer-container{
     display: flex;
@@ -428,7 +431,9 @@ footer hr{
     background-color: rgb(70, 68, 68);
     border: none;
     height: 5px;
-
+}
+footer.dark hr {
+    background-color: rgb(152, 151, 151);
 }
 #contatos{
     gap:17px;
@@ -450,10 +455,9 @@ footer hr{
     font-family: "Inter";
 }
 #copyright{
-display: flex;
-justify-content:center;
-align-items: flex-end;
-
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
 }
 #copyright p{
     font-family: "Inter";
@@ -467,7 +471,3 @@ align-items: flex-end;
     font-family: "Syne";
     font-size: 26px;
 }
-
-
-
-
