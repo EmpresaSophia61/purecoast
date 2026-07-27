@@ -3,15 +3,20 @@
     padding:0%;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     padding: 20px;
     min-height: 200px;
     display: flex;
 }
 header h1{
-    font-family:"Dela Gothic One", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 5rem;
-    line-height: 0.9; 
+    font-family:"Denk One", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5.6rem;
+    font-weight: lighter;
+    display: flex;
+    align-items: end;
 }
 nav{
     display: flex;
@@ -30,6 +35,53 @@ a{
     font-family: "Manrope";
     font-size: 2.3rem;
     font-weight: bold;
+}
+.dropdown{
+    position: relative;
+}
+
+summary{
+    list-style: none;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    font-family: "Manrope";
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+summary::-webkit-details-marker{
+    display: none;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 8px;
+    padding: 15px 0;
+    min-width: 140px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.4);
+    flex-direction: column;
+    z-index: 100;
+}
+
+.dropdown[open] .dropdown-menu{
+    display: flex;
+}
+
+.dropdown-menu a{
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.dropdown-menu a:hover{
+    background: #858484;
+    color:white
 }
 .linha-azul{
    background-color: rgba(0, 42, 126, 1);
@@ -73,13 +125,6 @@ a{
     gap: 30px;
     padding: 50px;
 }
-
-
-
-
-
-
-
 .card{
     width: 100%;
     overflow: hidden;
@@ -111,7 +156,7 @@ a{
     color:white;
     max-height:0;
     overflow:hidden;
-    transition:.7s ease-out;
+    transition:.7s ease;
     padding:0 70px;
     display: flex;
     flex-direction: column;
@@ -135,7 +180,7 @@ a{
 }
 
 .card:hover .conteudo{
-    max-height:1000px;
+    max-height:2000px;
     padding-bottom: 50px;
    
 }
@@ -151,6 +196,16 @@ a{
 #festivais{
     background:rgba(127, 96, 28, 1) ;
 }
+#diquis{
+    background: rgba(64, 76, 41, 1);
+}
+#lasegua{
+    background: rgba(36, 18, 37, 1);
+}
+#lasegua p{
+    margin-top: 20px;
+}
+
 .coluna{
     display:flex;
     flex-direction:column;

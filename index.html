@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="./src/CSS/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -19,7 +19,17 @@
         <h1>COSTA<br>RICA</h1>
         <nav>
              <ul>
-                <li><a href="#home">DESCUBRA</a></li>
+                <li><a href="./index.html">HOME</a></li>
+                   <details class="dropdown">
+                      <summary>DESCUBRA</summary>
+                        <div class="dropdown-menu">
+                            <a href="./src/pages/#">História</a>
+                            <a href="./src/pages/#">Música</a>
+                            <a href="./src/pages/gastronomia.html">Gastronomia</a>
+                            <a href="./src/Pages/natureza.html">Natureza</a>
+                            <a href="./src/Pages/cultura.html">Cultura</a>
+                        </div>
+                    </details>
                 <li><a href="#sobre">QUIZ</a></li>
                 <li><a href="#servicos">DESENVOLVEDORES</a></li>
             </ul>
@@ -36,9 +46,9 @@
   <section class="hero">
 
     <article id="img-hero">
-    <img src="./assets/img/imghome1.png">
-    <img src="./assets/img/imghome2.png">
-    <img src="./assets/img/imghome3.png">
+    <img src="./src/assets/img/imghome1.png">
+    <img src="./src/assets/img/imghome2.png">
+    <img src="./src/assets/img/imghome3.png">
     </article>
 
     <article id="introducao-home">
@@ -75,65 +85,70 @@
     <article id="destaques">
         <h2>Destaques do dia</h2>
         <div id="cards">
-            <div class="card cafe">
-                <img src="./assets/img/homecafe.jpg" alt="">
+            <a href="./src/Pages/gatronomia.html" class="card cafe">
+                <img src="./src/assets/img/homecafe.jpg" alt="">
                 <div class="texto">
                     <h3>Aí vai uma xícara de café?</h3>
                     <p>O café do país é reconhecido mundialmente pela qualidade.</p>
                 </div>
-            </div>
+            </a>
+
+            <a href="./src/Pages/cultura.html#lasegua">
             <div class="card gallo">
-                <img src="./assets/img/homegallopinto.jpg" alt="">
+                <img src="./src/assets/img/homelasegua.jpg" alt="">
                 <div class="texto">
-                   <h3>Que cheirinho bom!</h3>
-                   <p>O carro-chefe da Costa Rica.</p>
+                   <h3>Que comece o terror!</h3>
+                   <p>A lenda mais famosa da Costa Rica.</p>
                 </div>
             </div>
+            </a>
 
-            <div class="card puravida">
-                <img src="./assets/img/homepuravida.jpg" alt="">
+            <a href="./src/Pages/cultura.html#puravida" class="card puravida">
+                <img src="./src/assets/img/homepuravida.jpg" alt="">
                 <div class="texto">
                     <h3>Pura Vida!</h3>
                     <p>A expressão mais famosa da Costa Rica.</p>
                 </div>
-           </div>
+            </a>
+    
 
-            <div class="card tucano">
-                <img src="./assets/img/hometucano.jpg" alt="">
+            <a href="./src/Pages/natureza.html" class="card tucano">
+                <img src="./src/assets/img/hometucano.jpg" alt="">
                 <div class="texto">
                     <h3>O Glamour da floresta!</h3>
                     <p>Com seu enorme bico colorido, o tucano é uma das aves mais famosas 
                     da Costa Rica e um dos símbolos de sua biodiversidade.</p>
                     </p>
                 </div>
-            </div>
+            </a>
 
-            <div class="card arenal">
-                <img src="./assets/img/homearenal.jpg" alt="">
+            <a href="./src/Pages/natureza.html#arenal" class="card arenal">
+                <img src="./src/assets/img/homearenal.jpg" alt="">
                 <div class="texto">
                     <h3>Shhhh, para não acordá-lo!</h3>
                     <p>O Vulcão Arenal é um dos cartões-postais 
                     mais famosos da Costa Rica.</p>
                 </div>
-            </div>
-
-            <div class="card boruca">
-                <img src="./assets/img/homeboruca.jpg" alt="">
+            </a>
+           
+        
+            <a href="./src/Pages/cultura.html#boruca" class="card boruca">
+                <img src="./src/assets/img/homeboruca.jpg" alt="">
                 <div class="texto">
                     <h3>Esculpidas com tradição!</h3>
                     <p>Produzidas artesanalmente, as máscaras 
                     Boruca preservam séculos de cultura indígena.</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="card diquis">
-                <img src="./assets/img/homediquis.jpg" alt="">
+            <a href="./src/Pages/cultura.html#diquis" class="card diquis">
+                <img src="./src/assets/img/homediquis.jpg" alt="">
                 <div class="texto">
                     <h3>Alienígenas? Calma...</h3>
                     <p>As misteriosas Esferas de Diquís intrigam 
                     arqueólogos do mundo inteiro.</p>
                 </div>
-            </div>
+            </a>
         </div>
     </article>
 </section>
@@ -143,23 +158,25 @@
         <div class="card-paginas">
             <h3>História</h3>
         </div>
-        <a href="./Pages/natureza.html">
+        <a href="./src/Pages/natureza.html">
         <div class="card-paginas">
             <h3>Natureza</h3>
         </div>
         </a>
-        <a href="./Pages/cultura.html">
+        <a href="./src/Pages/cultura.html">
         <div class="card-paginas">
             <h3>Cultura</h3>
         </div>
         </a>
+        <a href="./src/Pages/gastronomia.html">
         <div class="card-paginas">
             <h3>Gastronomia</h3>
         </div>
+        </a>
     </article>
     <article id="banners">
         <div class="banner"> 
-            <img src="./assets/img/bannermusica.jpg">
+            <img src="./src/assets/img/bannermusica.jpg">
             <div class="banner-texto">
                 <h2>¡Los Ticos te llaman a bailar!</h2>
                 <h4>Os Ticos te chamam para dançar!</h4>
@@ -169,7 +186,7 @@
         </div>
 
          <div class="banner">
-            <img src="./assets/img/bannergalleria.jpg">
+            <img src="./src/assets/img/bannergalleria.jpg">
             <div class="banner-texto">
                 <h2>Costa Rica sin filtro</h2>
                 <h4>Costa Rica sem filtro</h4>
@@ -190,14 +207,14 @@
     <article id="footer-container">
         <div id="footer-esquerda">
         <div id="contatos">
-            <img src="./assets/img/instagrambranco.png" alt="">
-            <img src="./assets/img/emailbranco.png" alt="">
-            <img src="./assets/img/facebookbranco.png" alt="">
-            <img src="./assets/img/telefonebranco.png" alt="">
+            <img src="./src/assets/img/instagrambranco.png" alt="">
+            <img src="./src/assets/img/emailbranco.png" alt="">
+            <img src="./src/assets/img/facebookbranco.png" alt="">
+            <img src="./src/assets/img/telefonebranco.png" alt="">
         </div>
             <div id="copyright"><p> &copy; 2026 -</p> <h6 id="pure">Pure</h6><h6 id="coast">Coast</h6></div>
         </div>
-        <img src="./assets/img/logo.png" id="logo">
+        <img src="./src/assets/img/logo.png" id="logo">
         <div id="footer-direita">
             <p>Políticas de privacidade</p>
             <p>Conheça nosso trabalho</p>
@@ -205,4 +222,6 @@
         </div>
     </article>
 </footer>
+<script src="./src/js/script.js"></script>
 </body>
+</html>

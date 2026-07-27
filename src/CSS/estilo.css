@@ -24,12 +24,59 @@ ul {
     align-items: center;
     
 }
-a{
+ a{
     color:black;
     text-decoration: none; 
     font-family: "Manrope";
     font-size: 2.3rem;
     font-weight: bold;
+}
+.dropdown{
+    position: relative;
+}
+
+summary{
+    list-style: none;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    font-family: "Manrope";
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+summary::-webkit-details-marker{
+    display: none;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 8px;
+    padding: 15px 0;
+    min-width: 140px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.4);
+    flex-direction: column;
+    z-index: 100;
+}
+
+.dropdown[open] .dropdown-menu{
+    display: flex;
+}
+
+.dropdown-menu a{
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.dropdown-menu a:hover{
+    background: #858484;
+    color:white
 }
 .linha-azul{
    background-color: rgba(0, 42, 126, 1);
@@ -128,12 +175,13 @@ a{
 .card{
     position: relative;
     overflow: hidden;
-    border-radius: 18px;
+    border-radius: 50px;
     cursor: pointer;
     justify-content: center;
     display: flex;
     transition: .4s ease;
 }
+
 
 .card img{
     width: 100%;
@@ -173,6 +221,7 @@ a{
 .texto p{
     font-size: 2rem;
     font-family: "Inter";
+    text-align: center;
 }
 
 /* tamanhos dos trens, q desgraça de fazer scrr */
@@ -185,6 +234,7 @@ a{
 .gallo{
     grid-column:2;
     grid-row:1;
+    height: 500px;
 }
 
 .puravida{
@@ -334,6 +384,10 @@ a{
    justify-content:center;
     align-items: flex-end;
     box-shadow: 9px 15px 1px -5px rgba(0, 0, 0, 0.18);
+}
+#invitacao-quiz button:hover{
+    transform: scale(1.08);
+    cursor: pointer;
 }
 #Z{
  font-family: "Silkscreen";
