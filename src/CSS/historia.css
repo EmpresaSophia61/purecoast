@@ -6,9 +6,6 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    background-color: black;
-}
 header{
     padding: 20px;
     min-height: 200px;
@@ -20,7 +17,6 @@ header h1{
     font-weight: lighter;
     display: flex;
     align-items: end;
-    color: white;
 }
 nav{
     display: flex;
@@ -33,7 +29,7 @@ ul {
     align-items: center;   
 }
 a{
-    color:white;
+    color:black;
     text-decoration: none; 
     font-family: "Manrope";
     font-size: 2.3rem;
@@ -51,7 +47,6 @@ summary{
     font-family: "Manrope";
     font-size: 2.3rem;
     font-weight: bold;
-    color: white;
 }
 
 summary::-webkit-details-marker{
@@ -78,7 +73,7 @@ summary::-webkit-details-marker{
 
 .dropdown-menu a{
     padding: 10px 15px;
-    color: rgb(0, 0, 0);
+    color: black;
     text-decoration: none;
     font-size: 2rem;
 }
@@ -124,159 +119,119 @@ summary::-webkit-details-marker{
 }
 .conteudo{
     padding:40px;
-    gap: 50px;
+}
+
+h2{
+     text-align: center;
+    font-size: 4rem;
+    font-family: "Syne";
+    margin: 50px;
+    
 }
 .conteudo hr{
-    margin:100px;
-}
-.bloco{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px 40px;
-}
-.conteudo h2{
-    font-family: "Syne";
-    color: white;
-    font-size: 4rem;
-    text-align: center;
-}
-
-
-#folcloricas{
-    display: flex;
-    flex-direction: column;
-  
-   
-}
-#populares{
-    display: flex;
-    flex-direction: column;
-  
-}
-.card-musica{
-  padding: 20px;
-  min-height: 200px;
-}
-.card-musica:hover{
-   box-shadow: 5px 12px 12px rgba(7, 0, 86, 0.35);
-   transform: translateY(-2px);
-  
-}
-.nomes-musica h3{
-    font-family: "Syne";
-    font-size: 2rem;
-}
-.nomes-musica h5{
-    font-family: "Inter";
-    font-size: 1.7rem;
-    color: #858484;
-}
-.infos-musica{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.infos-musica img{
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
-}
-.nomes-musica{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    
-}
-
-
-
-
-#card-musica{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.play-btn{
-    width: 45px;
-    height: 45px;
+    height: 3px;
     border: none;
-    border-radius: 50%;
-    background: #ffffff;
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    cursor: pointer;
+    background-color: #858484;
+    width: 80%;
+    margin: auto;
 }
 
-.play-btn:hover{
-    transform: scale(1.08);
+.evento{
+    position: relative;
+    width: 50%;
+    padding: 30px;
+    padding-top: 0;
 }
 
-.progresso{
-    flex: 1;
-    cursor: pointer;
-    
+.esquerda{
+    left: 0;
+    text-align: right;
 }
-#dancas-ritmos{
-    margin-top: 70px;
-}
-.progresso-estetica{
-    margin-left: auto;
-    margin-right: 50px;
-}
-.card-dancas-ritmos{
-    background-color: white;
-    padding: 30px 60px 30px 30px;
-    border-radius: 40px;
-    margin: 40px;
-    display: flex;
-    height: 350px;
-    
-}
-.card-dancas-ritmos h5{
-    font-size: 2.6rem;
-    color: black;
-    text-align: center;
-    font-family: "Syne";
 
-    
+.direita{
+    left: 50%;
 }
-.card-dancas-ritmos p{
-    font-size: 2rem;
-    font-family: "Syne";
-    margin: 20px;
+.timeline{
+    position: relative;
+    width: 90%;
+    margin: auto;
 }
-.card-dancas-ritmos img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 30px;
-    
-}
-.infos{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    
-}
-.imagem{
+.timeline::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 4px;
     height: 100%;
-    align-items: center ;
-    display: flex;
+    background: black;
 }
+.evento::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    top: 40px;
+}
+
+.esquerda::before{
+    right: -15px;
+}
+
+.direita::before{
+    left: -13px;
+}
+.card{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+  
+}
+.card img{
+    width: 700px;
+    border-radius: 10px;
+    margin-top: 15px;
+    object-fit: cover;
+
+}
+.card h4{
+    font-family: "Manrope";
+    font-size: 3rem;
+
+}
+.card h3{
+    font-family: "Syne";
+    font-size: 2.6rem;
+}
+.card p{
+    font-family: "Manrope";
+    font-size: 2rem;
+    font-weight: 600;
+}
+.esquerda .card{
+    margin-left: auto;
+    
+}
+
+
+
+
+
+
+
 
 
 
 
 
 footer{
-    background-color: rgb(252, 252, 252);
+    background-color: black;
     bottom: 0;
     left: 0;
     width: 100%;
-    color: rgb(42, 42, 42);
+    color: rgb(119, 119, 119);
     margin-top: 70px;
-    padding: 30px 30px 10px;
+    padding: 30px 30px 10px; 
 }
 #footer-container{
     display: flex;
@@ -294,7 +249,7 @@ footer{
     gap:8px 
 }
 footer hr{
-    background-color: rgb(152, 151, 151);
+    background-color: rgb(70, 68, 68);
     border: none;
     height: 5px;
 
@@ -307,7 +262,7 @@ footer hr{
 #contatos img{
     height:50px;
     width: auto;
-    filter:invert(40%);
+    filter: brightness(40%);
 }
 #logo{
     height: 100px;
